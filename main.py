@@ -92,7 +92,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if not self.is_allowed_to_run:
                 return
         
-            url = f'https://help.salesforce.com/s/products/{product}?language=en_US'
+            url = f'https://help.salesforce.com/s/products/sales?language=en_US'
             self.driver.get(url)
             self.current_url_label.setText(url)
             while True:
